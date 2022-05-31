@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Core">
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="500dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/btn16GB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DDR4 16GB." />
+
+        <RadioButton
+            android:id="@+id/btn12GB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DDR4 12GB." />
+
+        <RadioButton
+            android:id="@+id/btn8GB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DDR4 8GB." />
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/imgRAM"
+        android:layout_width="200"
+        android:layout_height="200"
+        android:layout_marginTop="148dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/RAM" />
+
+    <TextView
+        android:id="@+id/txtRAM"
+        android:layout_width="150"
+        android:layout_height="100"
+        android:layout_marginTop="24dp"
+        android:text="RAM"
+        android:textAlignment="center"
+        android:textSize="60sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtRAMDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selecciona la cantidad de RAM:"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="419dp" />
+
+    <Button
+        android:id="@+id/btnCheckRAM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Checked"
+        android:textColorLink="#03A9F4"
+        tools:layout_editor_absoluteX="281dp"
+        tools:layout_editor_absoluteY="652dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
