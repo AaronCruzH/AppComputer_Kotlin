@@ -33,16 +33,6 @@
             android:text="DDR4 8GB." />
     </RadioGroup>
 
-    <ImageView
-        android:id="@+id/imgRAM"
-        android:layout_width="200"
-        android:layout_height="200"
-        android:layout_marginTop="148dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/RAM" />
-
     <TextView
         android:id="@+id/txtRAM"
         android:layout_width="150"

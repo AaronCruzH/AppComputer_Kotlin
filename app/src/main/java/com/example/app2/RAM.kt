@@ -18,7 +18,7 @@ class RAM : AppCompatActivity() {
         val btnCheckRAM = findViewById<Button>(R.id.btnCheckRAM)
         btnCheckRAM.setOnClickListener{
             if(btn16GB.isChecked){
-                
+            
             }
 
             val intent = Intent(this@RAM,Core::class.java)

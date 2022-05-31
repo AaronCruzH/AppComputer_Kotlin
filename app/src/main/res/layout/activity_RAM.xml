@@ -34,16 +34,6 @@
             android:text="DDR4 8GB." />
     </RadioGroup>
 
-    <ImageView
-        android:id="@+id/imgRAM"
-        android:layout_width="200"
-        android:layout_height="200"
-        android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtRAM"
-        app:srcCompat="@drawable/RAM" />
-
     <TextView
         android:id="@+id/txtRAM"
         android:layout_width="150"
@@ -60,12 +50,11 @@
         android:id="@+id/txtRAMDescription"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
         android:text="Selecciona la cantidad de RAM:"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgRAM" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <Button
         android:id="@+id/btnCheckRAM"
@@ -73,7 +62,17 @@
         android:layout_height="wrap_content"
         android:text=" Checked"
         android:textColorLink="#03A9F4"
-        app:layout_constraintStart_toEndOf="@+id/radioGroup"
+        tools:layout_editor_absoluteX="259dp"
         tools:layout_editor_absoluteY="652dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200"
+        android:layout_height="200"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtRAM"
+        app:srcCompat="@drawable/ram" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
